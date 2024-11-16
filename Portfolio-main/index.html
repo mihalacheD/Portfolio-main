@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/mediaqueries.css">
+  <script src="https://kit.fontawesome.com/10e519d2e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <img
+          src="./images/mihalache-daniela.png"
+          class="logo-img"
+          >
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <img
+      src="./images/mihalache-daniela.png"
+      class="logo-img"
+      >
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()" >Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()" >Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile" >
+    <div class="section__pic-container">
+      <img src="./images/profile.png" alt="Mihalache Daniela picture" class="about-pic">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Mihalache Daniela</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img
+            src="./images/linkedin-brands-solid.svg"
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/feed/'"
+            target="_blank"
+            >
+        <img
+            src="./images/square-github-brands-solid.svg"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mihalacheD'"
+            target="_blank"
+            >
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./images/profile.png" alt="Profile picture" class="about-pic"/>
+      </div>
+
+      <div class="about-datails-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+            <img src="./images/briefcase-solid.svg" alt="experience icon" class="icon"/>
+            <h3>Experience +1year</h3>
+
+                  <p><br/>• I have developed strong knowledge in web development, utilizing <strong>HTML</strong> and <strong>CSS</strong> for
+                  structuring and styling web pages, combined with <strong>JavaScript</strong> for dynamic functionalities. My experience includes
+                   working with <strong>React</strong> to build interactive user interfaces and <strong>Next.js</strong> for modern, optimized web
+                    applications.</p>
+                  <p><br>• Proficient in using <strong>Bootstrap</strong> and <strong>Tailwind CSS</strong> for responsive and modern UI design.</p>
+                  <p><br>•Experienced with <strong>TypeScript</strong> for building scalable and type-safe applications.</p>
+                  <p><br>•Skilled in version control using <strong>GitHub</strong> for collaborative development and project management.</p>
+          </div>
+
+        <div class="details-container">
+            <img src="./images/graduation-cap-solid.svg" alt="education icon" class="icon"/>
+            <h3>Education</h3>
+            <p
+               class="certificate"
+               onclick="location.href='https://coursera.org/share/3e3a16e0c93e743e6cbd7c37bce4c5eb'">
+              <br>☆ Meta Front-End Developer Professional Certificate<br/>Coursera</p>
+            <p
+              class="certificate"
+              onclick="window.open('./assets/nextJs.pdf')">
+              <br>☆ Next.js<br/>Code with Mosh</p>
+            <p
+               class="certificate"
+               onclick="location.href='https://www.codecademy.com/profiles/cloud7717277742/certificates/56fb1e71303e37b643bb1905f31c8a09'">
+               <br>☆ Learn TypeScript Course<br/>Codecademy</p>
+            <p
+               class="certificate"
+               onclick="location.href='https://coursera.org/share/fd9fb431ff7c9633f5722074a3987dc6'">
+               <br>☆ Excel Skills for Business: Intermediate II<br/>Coursera</p>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <div class="about-me-text">
+            <div class="about-me-paragraph">
+              <em><p>Hello, I'm Daniela, a passionate aspiring Frontend Developer!</p></em>
+            </div>
+          <p>I have experience building responsive
+            and user-friendly web applications. I specialize in <em>HTML, CSS and JavaScript</em>.
+            In my projects I used <em>React, Next.js and GitHub</em> for version control. I have successfully completed a <em>9-course program as
+            a front-end developer from Meta, hosted by Coursera</em>.</p>
+          <p>I constantly try to learn, improve and have fun in the procces.
+            My experience in hospitality has honed valuable skills such as attention to detail, effective communication, and a
+            strong user-focused approach. I excel at problem-solving, multitasking, and working under pressure, all of which
+            translate seamlessly into creating intuitive, user-friendly web applications.</p>
+          <p>In my free time I like to develop my creativity by painting, drawing and enjoying nature.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+        src="./images/arrow1.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'">
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>React</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>Boostrap</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>Tailwind</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>UX/UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>Next.js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>MySQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/square-check-solid.svg" alt="experience icon" class="icon" >
+              <div>
+                <h3>Git/GitHub</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img
+    src="./images/arrow1.png"
+    alt="arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'">
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+              src="./images/project1.png"
+              alt="Project 1"
+              class="project-img"
+              />
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/mihalacheD/Casa-Mihai-project'">Github</button>
+          <button class=" btn btn-color-2 project-btn" onclick="location.href='https://casamihaiproject.netlify.app/acasa'">Live Demo</button>
+        </div>
+        </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+              src="./images/project2.png"
+              alt="Project 2"
+              class="project-img"
+              />
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/mihalacheD/Little-Lemon-project'">Github</button>
+          <button class=" btn btn-color-2 project-btn" onclick="location.href='https://littlelemonmihalached.netlify.app/'">Live Demo</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img
+            src="./images/project3.png"
+            alt="Project 3"
+            class="project-img"
+            />
+      </div>
+      <h2 class="experience-sub-title project-title">Project Three</h2>
+      <div class="btn-container">
+        <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/mihalacheD/issue-tracker'">Github</button>
+        <button class=" btn btn-color-2 project-btn" onclick="location.href='https://issue-tracker-umber-one.vercel.app/'">Live Demo</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <img
+    src="./images/arrow1.png"
+    alt="arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'">
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+           src="./images/briefcase-solid.svg"
+           alt="email icon"
+           class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:danutza_dima88@yahoo.com">danutza_dima88@yahoo.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+           src="./images/linkedin-brands-solid.svg"
+           alt="linkedin icon"
+           class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/daniela-mihalache-543695224/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <p>Copyright &#169; 2024 Mihalache Daniela. All Rights Reserved.</p>
+  </footer>
+<script src="./assets/script.js"></script>
+<script src="https://kit.fontawesome.com/10e519d2e3.js" crossorigin="anonymous"></script>
+</body>
+</html>
